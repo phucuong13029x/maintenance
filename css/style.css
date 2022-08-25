@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;0,800;1,400&display=swap');
+:root{
+    --col01: #1e87f0;
+}
+body{
+    margin: auto;
+    padding: 0;
+    background: url('../image/background.jpg') no-repeat center;
+    background-color: var(--col01);
+    background-blend-mode: multiply;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    cursor: default;
+}
+.container{
+    margin: auto;
+    position: fixed;
+    width: max-content;
+    padding: 30px;
+    background-color: #ffffff;
+    opacity: 0.9;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 3vh;
+    display: block;
+    max-height: fit-content;
+    box-shadow: 0px 10px 6px -6px #000000;
+}
+.container .content{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /* position: absolute; */
+}
+.container .content .info{
+    padding: 10px 20px 40px 20px;
+    text-align: center;
+}
+.logo{
+    margin: 3% auto;
+    width: 70%;
+    max-width: 280px;
+}
+.info h1{
+    font-size: 2.5vh;
+    /* font-size: 1rem; */
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    text-align: center;
+    word-break: keep-all;
+}
+.info p{
+    font-size: 14px;
+}
+.loading:after {
+    content: "...";
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    animation: ellipsis-dot 1s infinite .5s;
+    animation-fill-mode: fowards;
+    width: 1.25em;
+    text-align: left;
+}
+
+@keyframes ellipsis-dot {
+    25% {content: "";}
+    50% {content: ".";}
+    75% {content: "..";}
+    100% {content: "...";}
+}
+.countdown{
+    font-size: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 25px auto;
+}
+.countdown div{
+    display: flex;
+    flex-direction: column;
+}
+.countdown div span:nth-of-type(2){
+    font-size: small;
+}
+.countdown div:nth-of-type(1), .countdown div:nth-of-type(3), .countdown div:nth-of-type(5), .countdown div:nth-of-type(7){min-width: 3ch;}   
+@media screen and (max-width:480px) {
+    .logo{
+        width: 50% !important;
+        margin: 5% auto;
+    }
+    .flower{
+        background-size: 80%;
+    }
+    .info h1{
+        font-size: 2vw;
+    }
+    .countdown{justify-content: space-around;}
+    
+}
+@media screen and (max-width:900px) {
+    .container{
+        padding: 10px;
+        width: 80%;
+    }
+    .info h1{
+        font-size: 1.5vh;
+    }
+    .countdown{
+        font-size: 4vw;
+    }
+}
+@media screen and (min-width:901px) {
+    .countdown{
+        font-size: 4vh;
+    }
+}
+@media screen and (min-width:1600px) {
+    .countdown{
+        font-size: 5vh;
+    }
+}
+
+
