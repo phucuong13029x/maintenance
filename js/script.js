@@ -196,7 +196,7 @@
 
 
 // Countdown
-var countDownDate = new Date("08-30-2022 00:00:00").getTime();
+var countDownDate = new Date("2022-09-01T00:00:00").getTime();
 function retime(time){
     var x = time;
     if(x < 10){
