@@ -146,7 +146,7 @@ button{
     width: inherit;
     text-transform: uppercase;
 }
-button:hover, button:active, button:focus{
+button:hover{
     background-color: var(--col02);
     transition: .5;
 }

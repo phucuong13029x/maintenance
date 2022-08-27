@@ -227,5 +227,6 @@ btcountdown.addEventListener('click', function handleClick() {
     } else {
         evcountdown.style.display = 'flex';
         btcountdown.textContent = 'Hide style 1';
+        btcountdown.style.background = 'var(--col02)';
     }
 });
