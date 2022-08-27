@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;0,800;1,400&display=swap');
 :root{
     --col01: #1e87f0;
+    --col02: #f50;
 }
 body{
     /* margin: auto; */
@@ -150,7 +151,7 @@ div.tool{
     justify-content: space-around;
     align-items: center;
 }
-div.tool button{
+button{
     height: 30px;
     border-radius: 15px;
     border: none;
@@ -159,4 +160,8 @@ div.tool button{
     padding: 5px;
     margin: 0 15px;
     width: inherit;
+}
+button:hover{
+    background-color: var(--col02);
+    transition: .5;
 }
