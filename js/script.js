@@ -224,6 +224,7 @@ btcountdown.addEventListener('click', function handleClick() {
     if (evcountdown.style.display === 'flex') {
         evcountdown.style.display = 'none';
         btcountdown.textContent = 'Style 1';
+        btcountdown.style.background = 'var(--col01)';
     } else {
         evcountdown.style.display = 'flex';
         btcountdown.textContent = 'Hide style 1';
