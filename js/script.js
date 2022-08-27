@@ -217,15 +217,15 @@ setInterval(function () {
 }, 1000);
 // End Countdown
 
-let btdefault = document.querySelector('#default');
+let btcountdown = document.querySelector('#countdown');
 let evcountdown = document.querySelector('.countdown');
 
-btdefault.addEventListener('click', function handleClick() {
+btcountdown.addEventListener('click', function handleClick() {
     if (evcountdown.style.display === 'none') {
         evcountdown.style.display = 'flex';
-        btdefault.textContent = 'Hide default';
+        btdefault.textContent = 'Hide Countdown';
     } else {
         evcountdown.style.display = 'none';
-        btdefault.textContent = 'Show default';
+        btdefault.textContent = 'Countdown';
     }
 });

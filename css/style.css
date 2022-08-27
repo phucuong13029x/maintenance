@@ -79,7 +79,8 @@ div.text span{
 }
 .countdown{
     font-size: 6rem;
-    display: flex;
+    display: none;
+    /* display: flex; */
     flex-direction: row;
     justify-content: center;
     margin: 25px auto;
