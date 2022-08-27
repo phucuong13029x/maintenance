@@ -160,8 +160,9 @@ button{
     padding: 5px;
     margin: 0 15px;
     width: inherit;
+    text-transform: uppercase;
 }
-button:hover{
+button:hover, button:active, button:focus{
     background-color: var(--col02);
     transition: .5;
 }
