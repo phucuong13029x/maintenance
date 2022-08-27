@@ -147,7 +147,7 @@ div.tool{
     background-color: #ffffff;
     z-index: 2;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 div.tool button{
@@ -157,4 +157,5 @@ div.tool button{
     background-color: var(--col01);
     color: #ffffff;
     padding: 5px;
+    margin: 0 15px;
 }
