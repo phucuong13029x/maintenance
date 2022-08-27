@@ -183,10 +183,10 @@
 
 // Countdown
 function reload(){
-    document.getElementById('days').innerHTML = 00;
-    document.getElementById('hours').innerHTML = 00;
-    document.getElementById('minutes').innerHTML = 00;
-    document.getElementById('seconds').innerHTML = 00;
+    document.getElementById('days').innerHTML = '00';
+    document.getElementById('hours').innerHTML = '00';
+    document.getElementById('minutes').innerHTML = '00';
+    document.getElementById('seconds').innerHTML = '00';
     var httpURL = 'https://m-ysvn.vercel.app/';
     window.location = httpURL;
 };
