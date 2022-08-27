@@ -216,3 +216,13 @@ setInterval(function () {
     }
 }, 1000);
 // End Countdown
+
+function eventbt(sendID){
+    let controler = document.querySelector(sendID);
+    if(controler.style.display = 'none'){
+        controler.style.display = 'block';
+    }
+    else{
+        controler.style.display = 'none';
+    }
+}
