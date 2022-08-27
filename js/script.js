@@ -221,11 +221,11 @@ let btcountdown = document.querySelector('#countdown');
 let evcountdown = document.querySelector('.countdown');
 
 btcountdown.addEventListener('click', function handleClick() {
-    if (evcountdown.style.display === 'none') {
-        evcountdown.style.display = 'flex';
-        btcountdown.textContent = 'Hide Countdown';
-    } else {
+    if (evcountdown.style.display === 'flex') {
         evcountdown.style.display = 'none';
         btcountdown.textContent = 'Countdown';
+    } else {
+        evcountdown.style.display = 'flex';
+        btcountdown.textContent = 'Hide Countdown';
     }
 });
