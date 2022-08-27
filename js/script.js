@@ -218,7 +218,9 @@ setInterval(function () {
 // End Countdown
 
 let btcountdown = document.querySelector('#countdown');
+let btstyle_2 = document.querySelector('#full');
 let evcountdown = document.querySelector('.countdown');
+let evstyle_2 = document.querySelector('#style_2');
 
 btcountdown.addEventListener('click', function handleClick() {
     if (evcountdown.style.display === 'flex') {
@@ -229,5 +231,16 @@ btcountdown.addEventListener('click', function handleClick() {
         evcountdown.style.display = 'flex';
         btcountdown.textContent = 'Hide style 1';
         btcountdown.style.background = 'var(--col02)';
+    }
+});
+btstyle_2.addEventListener('click', function handleClick() {
+    if (evstyle_2.style.display === 'none') {
+        evstyle_2.style.display = 'block';
+        btstyle_2.textContent = 'Hide Style 1';
+        btstyle_2.style.background = 'var(--col01)';
+    } else {
+        evstyle_2.style.display = 'none';
+        btstyle_2.textContent = 'Style 2';
+        btstyle_2.style.background = 'var(--col02)';
     }
 });

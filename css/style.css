@@ -17,7 +17,7 @@ body{
     cursor: default;
     position: relative;
 }
-.container{
+section#style_1 .container{
     margin: auto;
     position: absolute;
     width: max-content;
@@ -39,19 +39,19 @@ body{
     -ms-user-select: none!important;
     user-select: none!important;
 }
-.container .content{
+section#style_1 .container .content{
     width: 100%;
     height: fit-content;
 }
-.container .content .info{
+section#style_1 .container .content .info{
     /* padding: 10px 20px 40px 20px; */
     text-align: center;
 }
-.logo{
+section#style_1 .logo{
     margin: 0 auto 3% auto;
     max-width: 220px;
 }
-.info h1{
+section#style_1 .info h1{
     font-size: 2.5vh;
     font-weight: bold;
     text-align: center;
@@ -81,19 +81,16 @@ div.text span{
     body{
         /* background: none !important; */
     }
-    .container{
+    section#style_1 .container{
         opacity: 1 !important;
         padding: 10px;
         width: 80vw;
     }
-    .logo{
+    section#style_1 .logo{
         width: 50% !important;
         margin: 5% auto 0 auto;
     }
-    .flower{
-        background-size: 80%;
-    }
-    .info h1{
+    section#style_1 .info h1{
         font-size: 2vw;
     }
     .countdown{justify-content: space-around;}
@@ -102,7 +99,7 @@ div.text span{
     div.text span{
         display: block;
     }
-    .info h1{
+    section#style_1 .info h1{
         font-size: 2vh;
     }
     .countdown{
