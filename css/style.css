@@ -158,4 +158,5 @@ div.tool button{
     color: #ffffff;
     padding: 5px;
     margin: 0 15px;
+    width: inherit;
 }
