@@ -220,6 +220,7 @@ setInterval(function () {
 let btcountdown = document.querySelector('#countdown');
 let btstyle_2 = document.querySelector('#full');
 let evcountdown = document.querySelector('.countdown');
+let evstyle_1 = document.querySelector('#style_1');
 let evstyle_2 = document.querySelector('#style_2');
 
 btcountdown.addEventListener('click', function handleClick() {
@@ -235,10 +236,12 @@ btcountdown.addEventListener('click', function handleClick() {
 });
 btstyle_2.addEventListener('click', function handleClick() {
     if (evstyle_2.style.display === 'none') {
+        evstyle_1.style.display = 'none';
         evstyle_2.style.display = 'block';
         btstyle_2.textContent = 'Hide Style 1';
         btstyle_2.style.background = 'var(--col01)';
     } else {
+        evstyle_1.style.display = 'block';
         evstyle_2.style.display = 'none';
         btstyle_2.textContent = 'Style 2';
         btstyle_2.style.background = 'var(--col02)';
