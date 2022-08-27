@@ -52,7 +52,7 @@ body{
     word-break: keep-all;
 }
 div.text span{
-    display:inherit;
+    display:inline;
     font-size: 14px;
 }
 .loading:after {
