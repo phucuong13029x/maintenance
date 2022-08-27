@@ -151,9 +151,13 @@ div.tool{
     z-index: 2;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 div.tool button{
     height: 30px;
     border-radius: 15px;
-    
+    border: none;
+    background-color: #1e87f0;
+    color: #ffffff;
+    padding: 5px;
 }
