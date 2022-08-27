@@ -102,6 +102,7 @@ div.text span{
         font-size: 2vw;
     }
     .countdown{justify-content: space-around;}
+    .large-header{display: none !important;}
 }
 @media screen and (max-width:900px) {
     div.text span{
