@@ -47,14 +47,12 @@ body{
 }
 .info h1{
     font-size: 2.5vh;
-    /* font-size: 1rem; */
     font-weight: bold;
-    /* text-transform: uppercase; */
     text-align: center;
     word-break: keep-all;
 }
 div.text span{
-    display: block;
+    display:inherit;
     font-size: 14px;
 }
 .loading:after {
@@ -103,6 +101,9 @@ div.text span{
     .countdown{justify-content: space-around;}
 }
 @media screen and (max-width:900px) {
+    div.text span{
+        display: block;
+    }
     .container{
         padding: 10px;
         width: 80%;
