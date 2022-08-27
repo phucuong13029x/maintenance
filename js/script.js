@@ -182,6 +182,14 @@
 
 
 // Countdown
+setInterval(function reload(){
+    document.getElementById('days').innerHTML = 0;
+    document.getElementById('hours').innerHTML = 0;
+    document.getElementById('minutes').innerHTML = 0;
+    document.getElementById('seconds').innerHTML = 0;
+    var httpURL = 'https://m-ysvn.vercel.app/';
+    window.location = httpURL;
+}, 1000);
 var countDownDate = new Date("2022-08-27T12:47:00").getTime();
 function retime(time) {
     var x = time;
@@ -200,15 +208,11 @@ var x = setInterval(function () {
 
     document.getElementById('days').innerHTML = retime(days);
     document.getElementById('hours').innerHTML = retime(hours);
-    document.getElementById('minutes').innerHTML = retime(minutes)
+    document.getElementById('minutes').innerHTML = retime(minutes);
     document.getElementById('seconds').innerHTML = retime(seconds);
 
     if (distance < 0) {
         reload();
     }
-}, 1000);
-(function reload(){
-    var httpURL = 'https://m-ysvn.vercel.app/';
-    window.location = httpURL;
 }, 1000);
 // End Countdown
