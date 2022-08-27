@@ -223,9 +223,9 @@ let evcountdown = document.querySelector('.countdown');
 btcountdown.addEventListener('click', function handleClick() {
     if (evcountdown.style.display === 'none') {
         evcountdown.style.display = 'flex';
-        btdefault.textContent = 'Hide Countdown';
+        btcountdown.textContent = 'Hide Countdown';
     } else {
         evcountdown.style.display = 'none';
-        btdefault.textContent = 'Countdown';
+        btcountdown.textContent = 'Countdown';
     }
 });
