@@ -217,17 +217,15 @@ setInterval(function () {
 }, 1000);
 // End Countdown
 
-function eventbt(){
-    let btdefault = document.getElementById('default');
-    let evcountdown = document.getElementById('countdown');
+let btdefault = document.getElementById('default');
+let evcountdown = document.getElementById('countdown');
 
-    btdefault.addEventListener('click', function handleClick() {
-        if (evcountdown.style.display === 'none') {
-            evcountdown.style.display = 'flex';
-            btdefault.textContent = 'Hide default';
-        } else {
-            evcountdown.style.display = 'none';
-            btdefault.textContent = 'Show default';
-        }
-      });
-}
+btdefault.addEventListener('click', function handleClick() {
+    if (evcountdown.style.display === 'none') {
+        evcountdown.style.display = 'flex';
+        btdefault.textContent = 'Hide default';
+    } else {
+        evcountdown.style.display = 'none';
+        btdefault.textContent = 'Show default';
+    }
+});
