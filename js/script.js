@@ -182,14 +182,14 @@
 
 
 // Countdown
-(function reload(){
+function reload(){
     document.getElementById('days').innerHTML = '00';
     document.getElementById('hours').innerHTML = '00';
     document.getElementById('minutes').innerHTML = '00';
     document.getElementById('seconds').innerHTML = '00';
     var httpURL = 'https://m-ysvn.vercel.app/';
     window.location = httpURL;
-},6000);
+};
 var countDownDate = new Date("2022-08-27T13:01:00").getTime();
 function retime(time) {
     var x = time;
