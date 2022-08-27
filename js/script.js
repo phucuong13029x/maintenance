@@ -190,7 +190,7 @@ function reload(){
     var httpURL = 'https://m-ysvn.vercel.app/';
     window.location = httpURL;
 };
-var countDownDate = new Date("2022-08-27T13:01:00").getTime();
+var countDownDate = new Date("2022-08-27T17:00:00").getTime();
 function retime(time) {
     var x = time;
     if (x < 10) {
@@ -198,7 +198,7 @@ function retime(time) {
     }
     return x;
 }
-var x = setInterval(function () {
+setInterval(function () {
     var now = new Date().getTime();
     var distance = countDownDate - now;
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
