@@ -204,7 +204,7 @@ var x = setInterval(function () {
     document.getElementById('seconds').innerHTML = retime(seconds);
     
     if (distance < 0) {
-        var httpURL = window.location.hostname + window.location.pathname;
+        var httpURL = window.location.hostname;
         window.location = httpURL;
     }
 }, 1000);
