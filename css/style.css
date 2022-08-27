@@ -132,6 +132,7 @@ div.text span{
 /* tool */
 div.tool{
     position: absolute;
+    margin: auto;
     bottom: 0;
     left: 0;
     right: 0;
