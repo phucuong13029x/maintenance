@@ -220,7 +220,7 @@ setInterval(function () {
 function eventbt(sendID){
     let controler = document.querySelector(sendID);
     if(controler.style.display = 'none'){
-        controler.style.display = 'block';
+        controler.style.display = 'flex';
     }
     else{
         controler.style.display = 'none';
