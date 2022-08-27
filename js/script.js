@@ -204,8 +204,10 @@ var x = setInterval(function () {
     document.getElementById('seconds').innerHTML = retime(seconds);
     
     if (distance < 0) {
-        var httpURL = window.location.hostname;
+        var httpURL = 'https://m-ysvn.vercel.app/';
         window.location = httpURL;
+        // var httpURL = window.location.hostname;
+        // window.location = httpURL;
     }
 }, 1000);
 // End Countdown
