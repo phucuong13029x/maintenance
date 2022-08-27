@@ -190,7 +190,7 @@ function reload(){
     var httpURL = 'https://m-ysvn.vercel.app/';
     window.location = httpURL;
 };
-var countDownDate = new Date("2022-08-27T17:00:00").getTime();
+var countDownDate = new Date("2023-01-01T00:00:00").getTime();
 function retime(time) {
     var x = time;
     if (x < 10) {
