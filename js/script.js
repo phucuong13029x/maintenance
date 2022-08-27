@@ -224,14 +224,13 @@ let evstyle_1 = document.querySelector('#style_1');
 let evstyle_2 = document.querySelector('#style_2');
 
 btcountdown.addEventListener('click', function handleClick() {
+    evstyle_2.style.display = 'none';
     if (evcountdown.style.display === 'flex') {
         evcountdown.style.display = 'none';
-        evstyle_2.style.display = 'none';
         btcountdown.textContent = 'Style 1';
         btcountdown.style.background = 'var(--col01)';
     } else {
         evcountdown.style.display = 'flex';
-        evstyle_2.style.display = 'none';
         btcountdown.textContent = 'Hide style 1';
         btcountdown.style.background = 'var(--col02)';
     }
