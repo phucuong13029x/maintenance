@@ -217,12 +217,17 @@ setInterval(function () {
 }, 1000);
 // End Countdown
 
-function eventbt(sendID){
-    let controler = document.querySelector(sendID);
-    if(controler.style.display = 'none'){
-        controler.style.display = 'flex !important';
-    }
-    else{
-        controler.style.display = 'none !important';
-    }
+function eventbt(){
+    let btdefault = document.querySelector('default');
+    let evcountdown = document.querySelector('.countdown');
+
+    btdefault.addEventListener('click', function handleClick() {
+        if (evcountdown.style.display === 'none') {
+            evcountdown.style.display = 'flex';
+            btdefault.textContent = 'Hide default';
+        } else {
+            evcountdown.style.display = 'none';
+            btdefault.textContent = 'Show default';
+        }
+      });
 }
