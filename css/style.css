@@ -5,14 +5,18 @@
 body{
     margin: auto;
     padding: 0;
-    background: url('../image/background.jpg') no-repeat center;
+    width: 100%;
     background-color: var(--col01);
     background-blend-mode: multiply;
-    width: 100%;
-    background-size: cover;
+    /* background: url('../image/background.jpg') no-repeat center;
+    background-size: cover; */
     overflow: hidden;
     font-family: 'Montserrat', sans-serif;
     cursor: default;
+}
+.large-header{
+    background: url('../image/background.jpg') no-repeat center;
+    background-size: cover;
 }
 .container{
     margin: auto;
