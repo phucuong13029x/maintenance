@@ -218,8 +218,8 @@ setInterval(function () {
 // End Countdown
 
 function eventbt(){
-    let btdefault = document.querySelector('default');
-    let evcountdown = document.querySelector('.countdown');
+    let btdefault = document.getElementById('default');
+    let evcountdown = document.getElementById('countdown');
 
     btdefault.addEventListener('click', function handleClick() {
         if (evcountdown.style.display === 'none') {
