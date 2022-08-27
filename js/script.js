@@ -225,6 +225,7 @@ let evstyle_2 = document.querySelector('#style_2');
 
 btcountdown.addEventListener('click', function handleClick() {
     evstyle_2.style.display = 'none';
+    evstyle_1.style.display = 'block';
     if (evcountdown.style.display === 'flex') {
         evcountdown.style.display = 'none';
         btcountdown.textContent = 'Style 1';
