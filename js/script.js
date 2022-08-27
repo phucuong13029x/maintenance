@@ -183,9 +183,9 @@
 
 // Countdown
 var countDownDate = new Date("2022-08-27T12:47:00").getTime();
-function retime(time){
+function retime(time) {
     var x = time;
-    if(x < 10){
+    if (x < 10) {
         x = '0' + x;
     }
     return x;
@@ -202,12 +202,13 @@ var x = setInterval(function () {
     document.getElementById('hours').innerHTML = retime(hours);
     document.getElementById('minutes').innerHTML = retime(minutes)
     document.getElementById('seconds').innerHTML = retime(seconds);
-    
+
     if (distance < 0) {
-        var httpURL = 'https://m-ysvn.vercel.app/';
-        window.location = httpURL;
-        // var httpURL = window.location.hostname;
-        // window.location = httpURL;
+        reload();
     }
+}, 1000);
+(function reload(){
+    var httpURL = 'https://m-ysvn.vercel.app/';
+    window.location = httpURL;
 }, 1000);
 // End Countdown
