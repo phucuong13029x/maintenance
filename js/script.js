@@ -219,10 +219,10 @@ setInterval(function () {
 
 function eventbt(sendID){
     let controler = document.querySelector(sendID);
-    if(controler.hidden == false){
-        controler.hidden == true;
+    if(controler.hidden = false){
+        controler.style.visibility = "hidden";
     }
     else{
-        controler.hidden == false;
+        controler.style.visibility = "";
     }
 }
