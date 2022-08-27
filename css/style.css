@@ -108,8 +108,15 @@ div.text span{
     div.text span{
         display: block;
     }
+    .container{
+        padding: 10px;
+        width: 60vw;
+    }
     .info h1{
         font-size: 2vh;
+    }
+    .countdown{
+        font-size: 4vw;
     }
 }
 @media screen and (min-width:901px) {
