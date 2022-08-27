@@ -53,7 +53,8 @@ body{
     text-align: center;
     word-break: keep-all;
 }
-.info p{
+div.text span{
+    display: block;
     font-size: 14px;
 }
 .loading:after {
