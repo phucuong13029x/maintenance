@@ -217,7 +217,7 @@ setInterval(function () {
 }, 1000);
 // End Countdown
 
-let btdefault = document.querySelector('default');
+let btdefault = document.querySelector('#default');
 let evcountdown = document.querySelector('.countdown');
 
 btdefault.addEventListener('click', function handleClick() {
