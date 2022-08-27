@@ -13,7 +13,6 @@ body{
     overflow: hidden;
     font-family: 'Montserrat', sans-serif;
     cursor: default;
-    position: relative;
 }
 .container{
     margin: auto;
