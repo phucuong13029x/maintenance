@@ -190,7 +190,8 @@ function reload(){
     var httpURL = 'https://m-ysvn.vercel.app/';
     window.location = httpURL;
 };
-var countDownDate = new Date("2023-01-01T00:00:00").getTime();
+var get_time = document.querySelector('.countdown').dataset.text;
+var countDownDate = new Date(get_time).getTime();
 function retime(time) {
     var x = time;
     if (x < 10) {
@@ -241,11 +242,11 @@ btstyle_2.addEventListener('click', function handleClick() {
         evstyle_1.style.display = 'none';
         evstyle_2.style.display = 'block';
         btstyle_2.textContent = 'Hide Style 1';
-        btstyle_2.style.background = 'var(--col01)';
+        btstyle_2.style.background = 'var(--col02)';
     } else {
         evstyle_1.style.display = 'block';
         evstyle_2.style.display = 'none';
         btstyle_2.textContent = 'Style 2';
-        btstyle_2.style.background = 'var(--col02)';
+        btstyle_2.style.background = 'var(--col01)';
     }
 });
