@@ -220,7 +220,7 @@ setInterval(function () {
 
 let btcountdown = document.querySelector('#countdown');
 let btstyle_2 = document.querySelector('#full');
-let evcountdown = document.querySelector('.countdown');
+let evcountdown = document.querySelector('.styletime');
 let evstyle_1 = document.querySelector('#style_1');
 let evstyle_2 = document.querySelector('#style_2');
 
