@@ -244,8 +244,9 @@ btstyle_2.addEventListener('click', function handleClick() {
     if (evstyle_2.style.display === 'none') {
         evstyle_1.style.display = 'none';
         evstyle_2.style.display = 'block';
-        btstyle_2.textContent = 'Hide Style 1';
+        btstyle_2.textContent = 'Hide Style 2';
         btstyle_2.style.background = 'var(--col02)';
+        btcountdown.style.background = 'var(--col01)';
     } else {
         evstyle_1.style.display = 'block';
         evstyle_2.style.display = 'none';
