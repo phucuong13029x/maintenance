@@ -233,6 +233,8 @@ btcountdown.addEventListener('click', function handleClick() {
         style_1.style.display = 'none';
         btcountdown.textContent = 'Style 1';
         btcountdown.style.background = 'var(--col01)';
+        btstyle_2.textContent = 'Style 2';
+        btstyle_2.style.background = 'var(--col01)';
     } else {
         evcountdown.style.display = 'flex';
         style_1.style.display = 'inline-block';
