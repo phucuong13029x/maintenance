@@ -120,6 +120,17 @@ div.text span{
 }
 
 /* tool */
+
+.stickyads-bottom{position:fixed;bottom:0;left:0;right:0;min-height:70px;max-height:200px;padding:5px;box-shadow:0 -6px 18px 0 rgba(9,32,76,.1);transition:all .1s ease;display:flex;align-items:center;justify-content:center;background:#fffdfc;z-index:100;border-top:1px solid #e6e6e6}
+.stickyads-close{width:40px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:12px 0 0;border:1px solid #e6e6e6;border-bottom:0;border-right:0;position:absolute;right:0;top:-30px;background:inherit;cursor:pointer}
+.stickyads-close::after{content:'✕';line-height:18px;font-size:14px}
+.stickyads-content{flex-grow:1;overflow:hidden;display:block;position:relative}
+.stickyads-input:checked ~ .stickyads-bottom{padding:0;min-height:0}
+.stickyads-input:checked ~ .stickyads-bottom .stickyads-content{display:none}
+.hidden{display:none}
+.stickyads-ncontent{min-height:70px;display:flex;align-items:center;justify-content:center;font-size:13px;color:#989b9f ;border:1px solid #e6e6e6 ;border-radius:3px} 
+.stickyads-ncontent::before{content:attr(data-text)}
+
 div.tool{
     position: absolute;
     margin: auto;
