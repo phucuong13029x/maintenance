@@ -197,7 +197,6 @@ div.text span{
     content: attr(data-text)
 }
 button{
-    height: 30px;
     border-radius: 15px;
     border: none;
     background-color: var(--col01);
