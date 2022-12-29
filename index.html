@@ -6,7 +6,7 @@
 <meta content='IE=Edge' http-equiv='X-UA-Compatible' />
 <meta content='true' name='MSSmartTagsPreventParsing' />
 <meta content='index, follow' name='googlebot' />
-<title>Yuanta Company</title>
+<title id="langTitlePage"></title>
 <link rel="stylesheet" href="./css/style.css" />
 
 <body>
@@ -14,60 +14,47 @@
     <section id="style_1">
         <div class="container">
             <div class="content">
-                <div class="logo"><img src="./image/logo-vi-dark-no-flower.svg" width="100%"></div>
+                <div class="logo"><img src="./image/logo_text_white.svg" width="100%"></div>
                 <div class="info">
-                    <h1>HỆ THỐNG ĐANG BẢO TRÌ</h1>
-                    <div class="text" id="style_1_1" style="display: none;"><span>Thời gian dự kiến:</span></div>
-                    <div class="countdown" data-text="2023-01-01T00:00:00">
-                        <div>
-                            <span id="days">00</span>
-                            <span>Ngày</span>
-                        </div>
-                        <div>:</div>
-                        <div>
-                            <span id="hours">00</span>
-                            <span>Giờ</span>
-                        </div>
-                        <div>:</div>
-                        <div>
-                            <span id="minutes">00</span>
-                            <span>Phút</span>
-                        </div>
-                        <div>:</div>
-                        <div>
-                            <span id="seconds">00</span>
-                            <span>Giây</span>
+                    <h1 id="langTitleHeader"></h1>
+                    <!-- HIDE COUNTDOWN -->
+                    <div id="showelement">
+                        <div class="text"><span id="langtextCountdown"></span></div>
+                        <div class="countdown" data-text="2022-12-30T12:47:00">
+                            <div>
+                                <span id="days">00</span>
+                                <span id="langtextCountdownDays"></span>
+                            </div>
+                            <div>:</div>
+                            <div>
+                                <span id="hours">00</span>
+                                <span id="langtextCountdownHours"></span>
+                            </div>
+                            <div>:</div>
+                            <div>
+                                <span id="minutes">00</span>
+                                <span id="langtextCountdownMinutes"></span>
+                            </div>
+                            <div>:</div>
+                            <div>
+                                <span id="seconds">00</span>
+                                <span id="langtextCountdownSeconds"></span>
+                            </div>
                         </div>
                     </div>
-                    <div class="text"><span>Quý khách vui lòng quay lại sau. </span><span>Xin lỗi vì sự bất tiện này.</span></div>
+                    <!-- END HIDE COUNTDOWN -->
+                    <div class="text"><span id="langtextContent_1" style="margin-right: 1ch;"></span><span id="langtextContent_2"></span></div>
+                    <div class="text_lang"><a onclick="changeLanguage('vi')"> VI </a>|<a onclick="changeLanguage('en')"> EN </a></div>
                 </div>
             </div>
         </div>
         <div id="large-header" class="large-header"><canvas id="demo-canvas"></canvas></div>
     </section>
-    <section id="style_2" style="display:none;">
-        <div class="container">
-            <div class="logo"><img src="./image/logo-vi-dark-no-flower.svg" width="100%"></div>
-            <h1>HỆ THỐNG ĐANG BẢO TRÌ</h1>
-            <div class="imgcontent"><img src="./image/maintenance_bg.png" width="100%"></div>
-            <div class="text"><span>Quý khách vui lòng quay lại sau. </span><span>Xin lỗi vì sự bất tiện này.</span></div>
-        </div>
-    </section>
     <!-- end main -->
-    <!-- tool -->
-    <input class='sticky-input hidden' id='stickyInput' type='checkbox' />
-    <div class='sticky-bottom'>
-        <label aria-label='Close Menu' class='sticky-close' for='stickyInput'></label>
-        <div class='sticky-content'>
-            <div class="tool">
-                <button class="bt-show" id="countdown">Style 1</button>
-                <button class="bt-show" id="full">Style 2</button>
-            </div>
-        </div>
-    </div>
-    <!-- end tool -->
+
     <script src="./js/element.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/lang.js"></script>
 </body>
 
 </html>
