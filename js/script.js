@@ -198,7 +198,7 @@ function reload() {
         })
 }
 
-var httpURL = 'https://' +window.location.pathname + '/Logon';
+var httpURL = 'https://' + window.location.hostname + '/Logon';
 if (document.querySelector('.countdown') === null){
     setInterval(function () {
         fetch(httpURL, { mode: 'no-cors' })
