@@ -204,8 +204,6 @@ if (document.querySelector('.countdown') === null){
         fetch(httpURL, { mode: 'no-cors' })
             .then(function (response) {
                 window.location = httpURL;
-            }).catch(function (error) {
-
             });
     }, 5000)
 }
@@ -233,8 +231,6 @@ else {
         fetch(httpURL, { mode: 'no-cors' })
             .then(function (response) {
                 window.location = httpURL;
-            }).catch(function (error) {
-
             });
         if (distance < 0) {
             setTimeout(reload, 15000)
