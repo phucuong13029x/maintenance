@@ -191,7 +191,9 @@ function reload() {
     document.getElementById('seconds').innerHTML = '00';
     fetch(httpURL, { mode: 'no-cors' })
         .then(function (response) {
-            window.location = httpURL;
+            if (!response.ok){
+                window.location = httpURL;
+            }
         }).catch(function (error) {
             var httpURLLocal = window.location.hostname + window.location.pathname;
             window.location = httpURLLocal;
@@ -203,7 +205,9 @@ if (document.querySelector('.countdown') === null){
     setInterval(function () {
         fetch(httpURL, { mode: 'no-cors' })
             .then(function (response) {
-                window.location = httpURL;
+                if (!response.ok){
+                    window.location = httpURL;
+                }
             });
     }, 5000)
 }
@@ -230,7 +234,9 @@ else {
 
         fetch(httpURL, { mode: 'no-cors' })
             .then(function (response) {
-                window.location = httpURL;
+                if (!response.ok){
+                    window.location = httpURL;
+                }
             });
         if (distance < 0) {
             setTimeout(reload, 15000)
