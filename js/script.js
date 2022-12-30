@@ -191,7 +191,7 @@ function reload() {
     document.getElementById('seconds').innerHTML = '00';
     fetch(httpURL, { mode: 'no-cors' })
         .then(function (response) {
-            if (!response.ok){
+            if (response.ok){
                 window.location = httpURL;
             }
         }).catch(function (error) {
@@ -205,7 +205,7 @@ if (document.querySelector('.countdown') === null){
     setInterval(function () {
         fetch(httpURL, { mode: 'no-cors' })
             .then(function (response) {
-                if (!response.ok){
+                if (response.ok){
                     window.location = httpURL;
                 }
             });
@@ -234,7 +234,7 @@ else {
 
         fetch(httpURL, { mode: 'no-cors' })
             .then(function (response) {
-                if (!response.ok){
+                if (response.ok){
                     window.location = httpURL;
                 }
             });
