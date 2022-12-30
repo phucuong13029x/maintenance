@@ -104,12 +104,10 @@ div.text_lang{
 }
 
 @media screen and (max-width:480px) {
-    body{
-        background-color: #000000;
-    }
     .container{
         opacity: 1 !important;
         width: 80vw;
+        max-width: 90%;
         border-radius: 3vh;
         box-shadow: 0px 10px 6px -6px #000000;
     }
