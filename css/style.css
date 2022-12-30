@@ -45,7 +45,7 @@ section .container .content{
     width: 100%;
     height: fit-content;
 }
-section#style_1 .container .content .info{
+section .container .content .info{
     padding: 15px 30px 30px 30px;
     text-align: center;
 }
@@ -125,15 +125,5 @@ div.text_lang{
     }
     .countdown{
         font-size: 2.5vh;
-    }
-}
-@media screen and (min-width:901px) {
-    .countdown{
-        font-size: 4vh;
-    }
-}
-@media screen and (min-width:1600px) {
-    .countdown{
-        font-size: 5vh;
     }
 }
