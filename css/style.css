@@ -2,7 +2,7 @@
 :root{
     --col01: #1e87f0;
     --col02: #f50;
-    --fontsizeDefault: 16px;
+    --fontsizeDefault: 14px;
     --showTime: inline; /* show = inline | hide = none */
 }
 body{
@@ -73,7 +73,7 @@ div.text_lang{
 }
 
 .countdown{
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
