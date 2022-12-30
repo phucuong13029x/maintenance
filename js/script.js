@@ -198,7 +198,7 @@ function reload() {
         })
 }
 
-var httpURL = 'http://webtrade-uat.ysvn.com.vn:8183/Logon';
+var httpURL = window.location.hostname + window.location.pathname + '/Logon';
 if (document.querySelector('.countdown') === null){
     setInterval(function () {
         fetch(httpURL, { mode: 'no-cors' })
