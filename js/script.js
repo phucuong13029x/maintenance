@@ -1,10 +1,3 @@
-// Redirect To HTTPS
-function redirectToHttps() {
-	window.location.replace(window.location.hostname);
-}
-redirectToHttps();
-// End Redirect To HTTPS
-
 // Element Background
 (function () {
     let box = document.querySelector('body');
