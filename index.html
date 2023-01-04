@@ -8,9 +8,6 @@
 <meta content='index, follow' name='googlebot' />
 <title id="langTitlePage"></title>
 <link rel="stylesheet" href="./css/style.css" />
-<head>
-    <meta http-equiv='refresh' content='0; URL=#'>
-  </head>
 <body>
     <!-- main -->
     <section id="style_1">
@@ -57,6 +54,15 @@
     <script src="./js/element.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/lang.js"></script>
+    <script type="text/javascript">
+        function Redirect() {
+            window.location = "/";
+        }
+
+        document.write("You will be redirected to main page in 10 sec.");
+        setTimeout('Redirect()', 10000);
+    </script>
+
 </body>
 
 </html>
