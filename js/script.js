@@ -1,10 +1,8 @@
 // Redirect To HTTPS
-// function redirectToHttps() {
-//     var httpURL = window.location.hostname + window.location.pathname;
-//     var httpsURL = "https://" + httpURL;
-//     window.location = httpsURL;
-// }
-// redirectToHttps();
+function redirectToHttps() {
+	window.location.replace(window.location.hostname);
+}
+redirectToHttps();
 // End Redirect To HTTPS
 
 // Element Background
